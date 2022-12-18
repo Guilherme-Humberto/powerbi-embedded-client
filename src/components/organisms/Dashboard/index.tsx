@@ -36,7 +36,9 @@ const Dashboard: React.FC<IDashboardProps> = ({ config, dimensions }) => {
   }
 
   useEffect(() => {
-    createReportInstance()
+    if (typeof window !== 'undefined') {
+      createReportInstance()
+    }
   }, [config.embedUrl, config.accessToken])
 
   return (
