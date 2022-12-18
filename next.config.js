@@ -1,14 +1,9 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: [
-      'localhost',
-      'images.pexels.com',
-      'adminex.nyc3.digitaloceanspaces.com'
-    ]
+    domains: ['localhost']
   },
   env: {
-    STRAPI_API_URL_GQL: process.env.STRAPI_API_URL_GQL,
-    TELEGRAM_TOKEN: process.env.TELEGRAM_TOKEN
+    APPLICATION_NAME: process.env.APPLICATION_NAME
   }
 }

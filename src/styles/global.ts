@@ -25,7 +25,7 @@ export const GlobalStyles = createGlobalStyle`
     button,
     textarea,
     select {
-        font-family: ${props => props.theme.fonts.primary};
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 400;
         font-size: 1.6rem;
         color: ${props => props.theme.colors.font};

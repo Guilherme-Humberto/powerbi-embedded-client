@@ -10,10 +10,5 @@ export const theme = {
     white: '#ffffff',
     dark: '#000000',
     background: '#f7efee'
-  },
-  fonts: {
-    primary: 'Poppins, sans-serif',
-    secondary: 'Josefin Sans, sans-serif',
-    tertiary: ''
   }
 }

@@ -1,52 +1,18 @@
-interface IAttrs {
-  data: {
-    attributes: { url: string }
-  }
-}
+import {
+  IQnaEmbedConfiguration,
+  ITileEmbedConfiguration,
+  IVisualEmbedConfiguration,
+  models
+} from 'powerbi-client'
 
-interface IPostProps {
-  data: {
-    attributes: {
-      title?: string
-      name?: string
-    }
-  }
-}
+export type IPowerbiInstanceConfig =
+  | models.IReportEmbedConfiguration
+  | models.IDashboardEmbedConfiguration
+  | ITileEmbedConfiguration
+  | IQnaEmbedConfiguration
+  | IVisualEmbedConfiguration
 
-export interface IBannerSlideProps {
-  id: number
-  url: string
-  attributes: {
-    url: string
-  }
-}
-
-export interface IBanner {
-  title: string
-  attributes: {
-    slug: string
-    slides: { data: IBannerSlideProps[] }
-  }
-}
-
-export interface IAuthor {
-  id: number
-  attributes: {
-    name: string
-    email: string
-    photo: IAttrs
-  }
-}
-
-export interface IPosts {
-  id: number
-  attributes: {
-    content: string
-    title: string
-    createdAt: Date
-    excerpt: string
-    image: IAttrs
-    category: IPostProps
-    author: IPostProps
-  }
+export type IReportDimensions = {
+  width: number
+  height: number
 }
